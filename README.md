@@ -6,7 +6,7 @@ This repository contains the analysis, benchmarking, and results of forecasting 
 
 ## 📖 Project Overview
 
-Efficient resource management in GPU clusters requires accurate forecasts of utilization and power consumption. This project benchmarks a wide range of forecasting approaches on a dataset of 243 GPU jobs training Inception v4 network, sampled at 10-second intervals. The models are evaluated on short-horizon predictions (5–6 minutes ahead), both with and without exogenous variables such as GPU memory utilization, temperature, and power draw.  
+Efficient resource management in GPU clusters requires accurate forecasts of utilization and power consumption. This project benchmarks a wide range of forecasting approaches on a dataset of 243 GPU jobs training Inception v4 network, sampled at 10-second intervals, originating from the [MIT Supercloud Dataset](https://github.com/MIT-AI-Accelerator/MIT-Supercloud-Dataset). The models are evaluated on short-horizon predictions (5–6 minutes ahead), both with and without exogenous variables such as GPU memory utilization, temperature, and power draw.  
 
 The repository is organized to enable reproducibility of the full pipeline: preprocessing, feature engineering, model training, evaluation, and results visualization.
 
@@ -77,7 +77,7 @@ Formulas and descriptions are included in the paper/analysis for reproducibility
 
 - Neural models (TSMixer, N-HiTS) achieve the best performance on long-horizon forecasts, particularly when incorporating exogenous variables.
 
-Detailed plot are available in the images/ directory. 
+Detailed plots are available in the images/ directory. 
 
 
 
